@@ -4,7 +4,7 @@ on: push
 
 jobs:
   init:
-    runs-on: self-hosted
+    runs-on: self-hosted => ubuntu:latest
     steps:
       - run: echo 'hello Aman'
       - run: echo $HOSTNAME
