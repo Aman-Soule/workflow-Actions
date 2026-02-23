@@ -11,10 +11,10 @@ jobs:
       - name: Étape 2 - Récupération du code 
         uses: actions/checkout@v4 
       - name: Étape 3 - Build 
-        run: ubuntu-latest
+        run: echo "Build en cours..."
       - name: Étape 4 - Tests 
-        run: ubuntu-latest 
+        run: echo "Tests en cours..."
       - name: Étape 5 - Packaging 
-        run: ubuntu-latest
+        run: echo "Packaging en cours..."
       - name: Étape 6 - Fin du pipeline 
         run: echo "Pipeline terminé"
