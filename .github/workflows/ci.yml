@@ -9,7 +9,7 @@ jobs:
       - name: Étape 1 - Initialisation 
         run: echo "Initialisation..." 
       - name: Étape 2 - Récupération du code 
-        uses: actions/checkout@v4 
+        run: echo "Récupération du code..." 
       - name: Étape 3 - Build 
         run: echo "Build en cours..."
       - name: Étape 4 - Tests 
