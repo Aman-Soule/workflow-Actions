@@ -11,7 +11,7 @@ jobs:
       - name: Étape 2 - Récupération du code 
         uses: actions/checkout@v4 
       - name: Étape 3 - Build 
-        run: mvn clean install 
+        run: ubuntu-latest
       - name: Étape 4 - Tests 
         run: mvn test 
       - name: Étape 5 - Packaging 
