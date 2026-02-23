@@ -6,11 +6,15 @@ jobs:
   init:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'hello Aman'
-      - run: echo $HOSTNAME
-      - run: Étape 1 - Initialisation
-      - run: Étape 2 - Récuperation du code
-      - run: Étape 3 - Build
-      - run: Étape 4 - Tests
-      - run: Étape 5 - Packaging
-      - run: Étape 6 - Fin du pipeline
+      - name: Étape 1 - Initialisation 
+        run: echo "Initialisation..." 
+      - name: Étape 2 - Récupération du code 
+        uses: actions/checkout@v4 
+      - name: Étape 3 - Build 
+        run: mvn clean install 
+      - name: Étape 4 - Tests 
+        run: mvn test 
+      - name: Étape 5 - Packaging 
+        run: mvn package 
+      - name: Étape 6 - Fin du pipeline 
+        run: echo "Pipeline terminé"
