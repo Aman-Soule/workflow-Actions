@@ -13,8 +13,8 @@ jobs:
       - name: Étape 3 - Build 
         run: ubuntu-latest
       - name: Étape 4 - Tests 
-        run: mvn test 
+        run: ubuntu-latest 
       - name: Étape 5 - Packaging 
-        run: mvn package 
+        run: ubuntu-latest
       - name: Étape 6 - Fin du pipeline 
         run: echo "Pipeline terminé"
